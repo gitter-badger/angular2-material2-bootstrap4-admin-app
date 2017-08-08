@@ -1,6 +1,28 @@
-# angular2-material2-admin-app
+# 通用管理系统快速开发框架
 
-基于`Angular 2`框架与`Material2`设计开发一套面向后台通用模板库
+[![Join the chat at https://gitter.im/angular-material-app/Lobby](https://badges.gitter.im/angular-material-app/Lobby.svg)](https://gitter.im/angular-material-app/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+基于最新`Angular 4`框架与`Material 2`技术的企业级通用管理系统快速开发框架，涵盖了大量的常用组件和基础功能，您可以快速开发各种MIS系统，如CMS、OA、CRM、ERP、POS等，最大程度上帮助企业节省时间成本和费用开支。
+
+[![Travis](https://travis-ci.org/stbui/angular-material-app.svg?branch=master)](https://travis-ci.org/stbui/angular-material-app)
+[![Docker Build Statu](https://img.shields.io/docker/build/stbui/angular-material-app.svg?style=flat-square)](https://hub.docker.com/r/stbui/angular-material-app/)
+[![Dependency Status](https://img.shields.io/david/stbui/angular-material-app.svg?style=flat-square)](https://david-dm.org/stbui/angular-material-app)
+[![devDependency Status](https://img.shields.io/david/stbui/angular-material-app.svg?style=flat-square)](https://david-dm.org/stbui/angular-material-app?type=dev)
+[![Github All Releases](https://img.shields.io/github/downloads/stbui/angular-material-app/total.svg)](http://www.stbui.com)
+[![Join the chat at https://gitter.im/angular-material-app](https://badges.gitter.im/stbui/angular-material-app.svg)](https://gitter.im/angular-material-app/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+
+
+### 平台环境
+
+[![Angular](https://img.shields.io/badge/Angular%204-4.0.0-brightgreen.svg?style=flat-square)](https://github.com/angular/angular)
+[![Angular-cli](https://img.shields.io/badge/Angular.cli-1.2.5-brightgreen.svg?style=square)](https://github.com/angular/angular-cli)
+[![Angular Mateiral 2](https://img.shields.io/badge/Material%202-2.0.0.beta.8-brightgreen.svg?style=square)](https://github.com/angular/material2)
+[![Flex-Layout](https://img.shields.io/badge/Flex.Layout-2.0.0.beta.8-brightgreen.svg?style=square)](https://github.com/angular/flex-layout)
+
+[![Scss](https://img.shields.io/badge/Scss-latest-brightgreen.svg?style=flat-square)](https://github.com/sass/sass)
+[![Typescript](https://img.shields.io/badge/Typescript-latest-brightgreen.svg?style=flat-square)](https://github.com/Microsoft/TypeScript)
+[![rxjs](https://img.shields.io/badge/rxjs-5.1.0-brightgreen.svg?style=flat-square)](https://github.com/Reactive-Extensions/RxJS)
+
 
 ### 基本功能
 - 谷歌 Material 设计
@@ -16,32 +38,13 @@
 - 跨浏览器支持
 - 免费更新
 
-### 技术栈
-- Angular 2
-- Bootstrap 4
-- Angular Mateiral2
-- Scss
-- Typescript
-- RxJx
-
-![demo image](src/assets/images-demo/2017-04-07_202402.jpg)
-
-### 平台环境
-
-* Angular-cli:    1.0.0-rc.1
-* Angular2:       2.4.0
-* Material2:      2.0.0-beta.2
-* Flex-Layout:    2.0.0-rc.1
+![demo image](src/assets/images-demo/20170802104620.png)
 
 ### 使用入门
 
 ```
-npm i -g @angular/cli
-git clone https://github.com/stbui/angular2-material2-bootstrap4-admin-app.git
-```
-
-进入项目目录
-```
+git clone https://github.com/stbui/angular-material-app.git
+cd angular-material-app
 npm install
 npm run start
 ```
@@ -50,36 +53,47 @@ npm run start
 http://127.0.0.1:4200
 ```
 
+
 ### 发布
 
 ```
-ng build --prod --aot --env=prod
+ng build --prod --aot --env=prod --extract-css
 ```
+
 
 ### Docker
 
 快速部署
 
 ```
-docker pull stbui/angular2-material2-admin-app
-docker run -d -P stbui/angular2-material2-admin-app
+docker pull stbui/angular-material-app
+docker run -d -P stbui/angular-material-app
 ```
 或
 ```
-docker run --rm --name angular2-material2-admin-app -v "$PWD":/usr/src/app -w /usr/src/app -p 4200:4200 -it node:latest bash -c "npm install && npm start"
+docker run --rm --name angular-material-app -v "$PWD":/usr/src/app -w /usr/src/app -p 4200:4200 -it node:latest bash -c "npm install && npm start"
 ```
 
-### 开发计划
 
-- [x] 分页
-- [x] MarkDown
-- [x] 高德地图
-- [x] echarts
-- [ ] 集成 七牛云
-- [ ] 集成 阿里云
-- [ ] ckeditor
-- [ ] highcharts
+### 依赖模块
 
+[material-design-icons](https://github.com/google/material-design-icons)
+- material-design-icons
 
-### 开源许可证
+[normalize.css](https://github.com/necolas/normalize.css) 
+- normalize.css
+ 
+[angular2-perfect-scrollbar](https://github.com/ywein/angular2-perfect-scrollbar)
+- This is an Angular 2 wrapper library for perfect-scrollbar.
 
+[ngx-quill](https://github.com/KillerCodeMonkey/ngx-quill)
+- quill editor with angular and TS
+
+[screenfull](https://github.com/sindresorhus/screenfull.js/)
+- Simple wrapper for cross-browser usage of the JavaScript Fullscreen API
+
+[angular-sortablejs](https://github.com/SortableJS/angular-sortablejs)
+- This package is an Angular 2 binding for Sortable.js. Supports standard arrays and Angular FormArray
+
+[ng2-charts](https://github.com/valor-software/ng2-charts)
+- Beautiful charts for Angular2 based on Chart.js
